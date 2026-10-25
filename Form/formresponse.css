@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 1.5em;
+    padding: 35px;
+}
+h1{
+    text-align: center;
+}
+a{
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+    text-align: center;
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+@media screen and (max-width:360px){
+    h1{
+        font-size: 30px;
+    }
+}

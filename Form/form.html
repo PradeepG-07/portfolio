@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="formresponse.html" autocomplete="off">
+        <h1>Fill Form</h1>
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" required maxlength="15" minlength="3" autocomplete="off">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required autocomplete="off">
+        </div>
+        <div>
+            <p>Gender</p>
+            <div>
+                <span>
+                    <input type="radio" name="gender" id="male" checked>
+                    <label for="male">Male</label>
+                </span>
+                <span>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </span>
+                <span>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </span>
+            </div>
+        </div>
+        <div>
+            <span>
+            <label for="country">Select Your Country</label>
+
+            </span>
+                <select name="Countries" id="country" autocomplete="off">
+                    <option value="India">India</option>
+                    <option value="London" >Germany</option>
+                    <option value="USA">Canada</option>
+                    <option value="USA">United States</option>
+                    <option value="USA">Sweden</option>
+                </select>
+        </div>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="50" rows="12" style="resize: none;"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
